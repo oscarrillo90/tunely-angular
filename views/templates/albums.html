@@ -53,6 +53,7 @@
     </div>
   </div>
 
+
   <input type="text" class="form-control" ng-model="searchText" placeholder="Search Albums">
   <div ng-repeat="album in albumsIndexCtrl.albums | orderBy: 'name' | filter: searchText" class="row">
     <div class="col-md-10 col-md-offset-1">

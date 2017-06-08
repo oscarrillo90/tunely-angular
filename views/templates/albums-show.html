@@ -32,6 +32,9 @@
                       <div class="list-group-item" ng-repeat="song in albumsShowCtrl.album.songs">
                         ({{song.trackNumber}}){{song.name}}
                       </div>
+                      <input ng-model="albumsShowCtrl.newSong.trackNumber" placeholder="track number" type="number" class="form-control input-md">
+                      <input ng-model="albumsShowCtrl.newSong.name" placeholder="track name" type="text" class="form-control input-md">
+                      <button type="button" class="btn btn-success" ng-click="albumsShowCtrl.createSong()"><span class="glyphicon glyphicon-plus"></span> Add New Song</button>
                     </li>
                   </ul>
                 </div>
